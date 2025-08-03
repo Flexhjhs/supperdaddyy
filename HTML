@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperDaddy MemeCoin | The Ultimate Meme Coin Experience</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #121212;
+      --secondary: #4f46e5;
+      --accent: #facc15;
+      --text-color: #e5e7eb;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    @keyframes pulse-bg {
+      0% { box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.4); }
+      70% { box-shadow: 0 0 0 20px rgba(250, 204, 21, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(250, 204, 21, 0); }
+    }
+
+    @keyframes particle-float {
+      0% { transform: translateY(0vh) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(-100vh) rotate(360deg); opacity: 0.1; }
+    }
+
+    .particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      background-color: var(--secondary);
+      animation: particle-float 20s infinite linear;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-200 min-h-screen relative overflow-x-hidden">
+  <!-- Particle Background -->
+  <div class="particles" id="particles"></div>
+
+  <div class="relative z-10 flex flex-col items-center min-h-screen px-4">
+    <div class="container mx-auto max-w-4xl p-6 md:p-10">
+
+      <!-- First Section with Image (¼ width) -->
+      <section class="flex justify-center py-10 md:py-16">
+        <img src="https://i.imgur.com/moBDye4.jpeg"
+             alt="SuperDaddy Visual"
+             class="w-1/4 h-auto rounded-xl shadow-2xl transition-transform duration-300 transform hover:scale-105"
+             onerror="this.onerror=null;this.src='https://placehold.co/300x300/4f46e5/ffffff?text=Image+Error';">
+      </section>
+
+      <!-- Hero Section -->
+      <section class="text-center py-10 md:py-16">
+        <h1 class="text-4xl md:text-6xl font-black uppercase tracking-tight mb-4 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-indigo-500">
+          SuperDaddy MemeCoin
+        </h1>
+        <p class="text-lg md:text-2xl font-bold text-yellow-400 mb-6 uppercase tracking-wider">
+          Charge. Flare. Cool-down. Repeat.
+        </p>
+        <p class="text-sm md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+          The Daddy of all meme coins is here to take over the Solana ecosystem. Join the SuperDaddy family today and experience the ultimate meme coin journey!
+        </p>
+      </section>
+
+      <!-- Social Buttons -->
+      <div class="flex flex-col md:flex-row justify-center gap-6 mt-10">
+        <a href="https://x.com/i/communities/1950953109653754266" target="_blank" class="flex items-center justify-center w-full md:w-auto px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
+          <i class="fab fa-twitter mr-3 text-lg"></i> Twitter
+        </a>
+        <a href="https://t.me/SUPERMANDADDY1" target="_blank" class="flex items-center justify-center w-full md:w-auto px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
+          <i class="fab fa-telegram-plane mr-3 text-lg"></i> Telegram
+        </a>
+        <a href="https://drive.google.com/file/d/1USrtYTeeWhoJY6aG2QSSOnbOZNmQW3a2/view?usp=sharing" target="_blank" class="flex items-center justify-center w-full md:w-auto px-8 py-4 bg-lime-600 hover:bg-lime-700 text-white font-bold rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
+          <i class="fas fa-file-alt mr-3 text-lg"></i> White Paper
+        </a>
+        <button class="flex items-center justify-center w-full md:w-auto px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white font-bold rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
+          <i class="fas fa-wallet mr-3 text-lg"></i> Contract Address
+        </button>
+      </div>
+
+      <!-- About Section -->
+      <section class="mt-16 py-12 md:py-20 text-center">
+        <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-yellow-400">
+          What is SuperDaddy?
+        </h2>
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+          SuperDaddy is more than just a meme coin; it's a movement. Built on the lightning-fast Solana network, we aim to build a strong, engaged community of believers. With a focus on fair distribution and community governance, SuperDaddy is poised to be the next big thing in the world of crypto memes.
+        </p>
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mt-4 leading-relaxed">
+          Join us on our journey to the moon and beyond. The SuperDaddy family is waiting for you!
+        </p>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-gray-500 mt-12 border-t border-gray-800 w-full">
+      <p class="text-sm md:text-base">&copy; 2023 SuperDaddy MemeCoin. All rights reserved. The Daddy of all meme coins.</p>
+    </footer>
+  </div>
+
+  <!-- Particle Script -->
+  <script>
+    function createParticles() {
+      const particlesContainer = document.getElementById('particles');
+      const particleCount = 30;
+      for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        const size = Math.random() * 8 + 4;
+        const posX = Math.random() * 100;
+        const animationDuration = Math.random() * 20 + 15;
+        const animationDelay = Math.random() * 10;
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        particle.style.left = `${posX}%`;
+        particle.style.bottom = `-${size}px`;
+        particle.style.animationDuration = `${animationDuration}s`;
+        particle.style.animationDelay = `${animationDelay}s`;
+        particlesContainer.appendChild(particle);
+      }
+    }
+    window.onload = () => {
+      createParticles();
+    };
+  </script>
+</body>
+</html>
